@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     // Elementos a animar
-    const animatedElements = document.querySelectorAll('.project-card, .about-container, .contact-box');
+    const animatedElements = document.querySelectorAll('.project-card, .about-container, .contact-box, .timeline-item');
     animatedElements.forEach(el => observer.observe(el));
 
 
@@ -98,6 +98,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
         glitchText.addEventListener('mouseout', () => {
             glitchText.style.textShadow = 'none';
+        });
+    }
+
+    // --- BOTÓN VOLVER ARRIBA ---
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    
+    if (scrollTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                scrollTopBtn.classList.add('show');
+            } else {
+                scrollTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     }
 });

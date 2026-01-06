@@ -11,6 +11,7 @@
     <!-- Iconos (RemixIcon) -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="timeline.css">
 </head>
 <body>
 
@@ -22,7 +23,7 @@
 
     <!-- Navegación -->
     <nav class="navbar">
-        <div class="logo">&lt;Dev/&gt;</div>
+        <div class="logo">&lt;RogerDev/&gt;</div>
         <ul class="nav-links">
             <li><a href="#home">Inicio</a></li>
             <li><a href="#about">Sobre Mí</a></li>
@@ -55,7 +56,8 @@
 
             <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary">Ver Proyectos <i class="ri-arrow-right-line"></i></a>
-                <a href="#contact" class="btn btn-outline">Contáctame</a>
+                <!-- Reemplaza 'cv.pdf' con la ruta real de tu archivo -->
+                <a href="cv.pdf" class="btn btn-outline" download>Descargar CV <i class="ri-download-line"></i></a>
             </div>
         </div>
         
@@ -119,6 +121,29 @@
         <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
         
         <div class="projects-grid">
+              <article class="project-card fade-in">
+              <div class="card-image">
+                <img src="img/Revit_logo.png" alt="Vista previa de FitSync" class="project-img">
+              </div>
+                <div class="card-content">
+                    <!-- Info proyecto 1 -->
+                    <h3>COVENIN In Revit</h3>
+                    <p> Extensión para Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN. 
+                    Genera reportes de cómputos métricos e integra elementos de la normativa de construcción nacional, 
+                    automatizando procesos para arquitectos e ingenieros civiles en Venezuela.</p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>PyRevit</span>
+                        <span>.NET</span>
+                        <span>Revit API</span>
+                        <span>Revit</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="https://github.com/icristianhernandez/covenin-revit" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
             <!-- PROYECTO 1 -->
             <article class="project-card fade-in">
               <div class="card-image">
@@ -145,20 +170,26 @@
             <!-- PROYECTO 2 -->
             <article class="project-card fade-in" style="animation-delay: 0.2s">
                 <div class="card-image placeholder-img color-2">
-                    <i class="ri-smartphone-line"></i>
+                   <img src="img/CriptoGuia_preview.png" alt="Vista previa de CriptoGuia" class="project-img">
                 </div>
                 <div class="card-content">
                     <!---->
-                    <h3>Coming Soon (mobile)</h3>
-                    <p>...</p>
+                    <h3>CriptoGuíaVE</h3>
+                    <p>Plataforma educativa y de consulta en tiempo real sobre criptomonedas para Venezuela. 
+                     Muestra la tasa del dólar paralelo desde Binance P2P, análisis de tendencias del mercado, 
+                    precios globales de criptomonedas y un centro educativo interactivo con quizzes aleatorios.</p>
                     <div class="tags">
-                        <span>React Native</span>
-                        <span>Supabase</span>
-                        <span>Expo</span>
+                        <span>React 19</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                        <span>Netlify Functions</span>
+                        <span>Binance P2P API</span>
+                        <span>CoinGecko API</span>
+
                     </div>
                     <div class="card-links">
-                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
+                        <a href="https://github.com/Kouriin1/CriptoGuia" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        <a href="https://criptoguia.netlify.app/" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
                     </div>
                 </div>
             </article>
@@ -191,9 +222,8 @@
             <div class="about-text">
                 <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
                 <p>
-                    Soy un apasionado de la tecnología con 1 años de experiencia construyendo soluciones web. 
-                    Me encanta resolver problemas complejos y aprender nuevas herramientas. Cuando no estoy programando, 
-                    probablemente me encuentres entrenando o aprendiendo sobre inteligencia artificial.
+                   Desarrollador web en formación continua con más de un año de práctica creando aplicaciones y soluciones web. Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. Busco mi primera 
+                   oportunidad profesional para aportar valor y seguir creciendo.
                 </p>
                 <div class="stats">
                     <div class="stat-item">
@@ -201,14 +231,73 @@
                         <p>Proyectos</p>
                     </div>
                     <div class="stat-item">
-                        <h3>+1</h3>
-                        <p>Años Exp.</p>
-                    </div>
-                    <div class="stat-item">
                         <h3>100%</h3>
                         <p>Compromiso</p>
                     </div>
                 </div>
+
+                <!-- TIMELINE - MI TRAYECTORIA -->
+                <!-- 
+                     INSTRUCCIONES PARA AÑADIR MAS ITEMS:
+                     1. Copia un bloque <div class="timeline-item"> entero.
+                     2. Pégalo en el orden que quieras (arriba es más antiguo en este diseño, o viceversa según prefieras).
+                     3. Asegúrate de alternar las clases "left" y "right" para mantener el diseño en zigzag.
+                -->
+                <div class="timeline-section">
+                    <h3 class="timeline-title">Mi Trayectoria</h3>
+                    <div class="timeline">
+                        
+                        <!-- ITEM 1: Revit Project -->
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Inicio</span>
+                                <h4>Revit Project</h4>
+                                <p>Primeros pasos en desarrollo tecnologico y modelado BIM. Adaptacion de normas Covenin al software de revit</p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 2: FitSync -->
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Intermedio</span>
+                                <h4>FitSync Platform</h4>
+                                <p>Desarrollo de mi primera plataforma fullstack ambiciosa. Integración de arquitectura híbrida React + Python/Flask.</p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 3: En Blanco (Placeholder) -->
+                        <div class="timeline-item left">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">En Progreso...</span>
+                                <h4>....</h4>
+                                <p>Trabajando en nuevas ideas y expandiendo mi stack tecnológico. ¡Pronto más novedades aquí!</p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 4: CriptoGuia -->
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date">Reciente</span>
+                                <h4>CriptoGuíaVE</h4>
+                                <p>Creación de una herramienta útil para la comunidad venezolana. Consumo de múltiples APIs en tiempo real y lógica financiera.</p>
+                            </div>
+                        </div>
+
+                        <!--  ITEMS AQUI DEBAJO -->
+                            
+                            </div>
+                        </div>
+
+                        <!-- AÑADE MAS ITEMS AQUI DEBAJO -->
+
+                    </div>
+                </div>
+                <!-- FIN TIMELINE -->
+
             </div>
         </div>
     </section>
@@ -233,6 +322,11 @@
     <footer>
         <p>&copy; 2025 Creado con <i class="ri-heart-fill"></i> y mucho café.</p>
     </footer>
+
+    <!-- Botón Volver Arriba -->
+    <a href="#" class="scroll-top" id="scrollTopBtn">
+        <i class="ri-arrow-up-line"></i>
+    </a>
 
     <script src="script.js"></script>
 </body>
