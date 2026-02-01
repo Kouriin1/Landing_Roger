@@ -656,3 +656,40 @@ footer i {
     box-shadow: 0 0 20px var(--accent-glow);
     transform: translateY(-5px);
 }
+
+/* --- LANGUAGE BUTTON --- */
+.btn-lang {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-secondary);
+    color: var(--accent-secondary);
+    padding: 0.4rem 0.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-code);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+    margin-left: 1rem;
+}
+
+.btn-lang:hover {
+    background: var(--accent-secondary);
+    color: var(--bg-card);
+    box-shadow: 0 0 10px var(--accent-secondary);
+}
+
+.btn-lang i {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .btn-lang {
+        position: absolute;
+        top: 1.5rem;
+        right: 4rem; /* Al lado del menu burger */
+        margin: 0;
+        padding: 0.3rem 0.6rem;
+    }
+}

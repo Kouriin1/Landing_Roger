@@ -1,0 +1,162 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Curriculum Vitae - Roger Montero</title>
+<style>
+    /* Estilos básicos compatibles con Word */
+    body {
+        font-family: Calibri, Arial, sans-serif;
+        line-height: 1.5;
+        color: #000000;
+        background-color: #ffffff;
+    }
+    .container {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h1 {
+        color: #2E74B5;
+        font-size: 24pt;
+        margin-bottom: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .subtitle {
+        text-align: center;
+        font-size: 14pt;
+        color: #555555;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+    .contact-info {
+        text-align: center;
+        font-size: 10pt;
+        margin-bottom: 20px;
+        color: #333333;
+    }
+    .contact-info a {
+        color: #2E74B5;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+    h2 {
+        color: #1F4D78;
+        font-size: 14pt;
+        border-bottom: 2px solid #2E74B5;
+        padding-bottom: 3px;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    h3 {
+        color: #333333;
+        font-size: 12pt;
+        font-weight: bold;
+        margin-bottom: 2px;
+        margin-top: 15px;
+    }
+    .job-meta {
+        color: #666666;
+        font-style: italic;
+        font-size: 10pt;
+        margin-bottom: 5px;
+    }
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 11pt;
+        text-align: justify;
+    }
+    ul {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+    }
+    li {
+        margin-bottom: 3px;
+        font-size: 11pt;
+    }
+    .skills-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .skills-table td {
+        vertical-align: top;
+        padding: 5px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Encabezado -->
+    <h1>Roger Montero</h1>
+    <p class="subtitle">Desarrollador Fullstack</p>
+    
+    <div class="contact-info">
+        <span>rmontero30679@gmail.com</span> |
+        <a href="https://www.linkedin.com/in/roger-montero-ba373525a">LinkedIn</a> |
+        <a href="https://github.com/Kouriin1">GitHub</a>
+    </div>
+
+    <!-- Perfil Profesional -->
+    <h2>Perfil Profesional</h2>
+    <p>
+        Desarrollador web en formación continua (USM, 8vo Semestre) con más de un año de experiencia práctica creando aplicaciones y soluciones web. 
+        Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. 
+        Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. 
+        Transformo ideas complejas en productos digitales reales, combinando la lógica del Backend con la interactividad del Frontend moderno.
+    </p>
+
+    <!-- Habilidades Técnicas -->
+    <h2>Habilidades Técnicas</h2>
+    <table class="skills-table">
+        <tr>
+            <td><strong>Lenguajes:</strong> JavaScript, Python, TypeScript, SQL, C#, CSS3, HTML5.</td>
+        </tr>
+        <tr>
+            <td><strong>Frameworks y Librerías:</strong> React, React Native, Node.js, Flask, Flutter, .NET.</td>
+        </tr>
+        <tr>
+            <td><strong>Herramientas y Otros:</strong> Git, Docker, Supabase, APIs REST, Revit API.</td>
+        </tr>
+    </table>
+
+    <!-- Proyectos Destacados -->
+    <h2>Proyectos Destacados</h2>
+
+    <h3>FitSync Platform</h3>
+    <div class="job-meta">Plataforma Web Fullstack | React 19, Python Flask, Supabase, PayPal API</div>
+    <ul>
+        <li>Desarrollo de una plataforma fitness completa con gestión de usuarios y pasarela de pagos integrada.</li>
+        <li>Implementación de una arquitectura híbrida uniendo la velocidad de React en el frontend con la lógica robusta de Python en el backend.</li>
+    </ul>
+
+    <h3>CriptoGuíaVE</h3>
+    <div class="job-meta">Plataforma Educativa Financiera | React 19, TypeScript, Tailwind CSS, Netlify Functions</div>
+    <ul>
+        <li>Creación de una herramienta de consulta en tiempo real sobre criptomonedas y tasas de cambio para la comunidad venezolana.</li>
+        <li>Integración de múltiples APIs (Binance P2P, CoinGecko) para visualización de datos financieros en tiempo real.</li>
+        <li>Desarrollo de un centro educativo interactivo con quizzes dinámicos.</li>
+    </ul>
+
+    <h3>COVENIN In Revit</h3>
+    <div class="job-meta">Extensión de Software (Plugin) | Python, PyRevit, .NET, Revit API</div>
+    <ul>
+        <li>Desarrollo de una extensión para Autodesk Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN.</li>
+        <li>Automatización de procesos para arquitectos e ingenieros, generando reportes de cómputos métricos precisos y cumpliendo con la normativa nacional.</li>
+    </ul>
+
+    <!-- Educación -->
+    <h2>Educación</h2>
+    
+    <h3>Ingeniería en Sistemas (En curso)</h3>
+    <div class="job-meta">Universidad Santa María (USM) | 8vo Semestre</div>
+    <p>Formación académica enfocada en desarrollo de software, estructuras de datos y gestión de proyectos tecnológicos.</p>
+
+</div>
+
+</body>
+</html>

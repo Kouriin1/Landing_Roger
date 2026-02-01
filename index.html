@@ -25,11 +25,15 @@
     <nav class="navbar">
         <div class="logo">&lt;RogerDev/&gt;</div>
         <ul class="nav-links">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#about">Sobre Mí</a></li>
-            <li><a href="#projects">Proyectos</a></li>
-            <li><a href="#contact">Contacto</a></li>
+            <li><a href="#home" data-i18n="nav-home">Inicio</a></li>
+            <li><a href="#about" data-i18n="nav-about">Sobre Mí</a></li>
+            <li><a href="#projects" data-i18n="nav-projects">Proyectos</a></li>
+            <li><a href="#contact" data-i18n="nav-contact">Contacto</a></li>
         </ul>
+        <!-- Language Toggle -->
+        <button id="language-toggle" class="btn-lang" aria-label="Switch Language">
+            <i class="ri-translate"></i> <span class="lang-code">EN</span>
+        </button>
         <div class="menu-toggle">
             <i class="ri-menu-3-line"></i>
         </div>
@@ -38,26 +42,26 @@
     <!-- Sección Hero (Inicio) -->
     <header id="home" class="hero">
         <div class="hero-content">
-            <p class="greeting">Hola, mundo. Soy</p>
+            <p class="greeting" data-i18n="hero-greeting">Hola, mundo. Soy</p>
             <!-- CAMBIAR AQUI: Tu nombre -->
             <h1 class="glitch-text" data-text="Roger Montero">Roger Montero</h1>
             
             <!-- CAMBIAR AQUI: Tus roles -->
             <h2 class="typing-container">
-                Desarrollador <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                <span data-i18n="hero-role-prefix">Desarrollador</span> <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
             </h2>
             
             <!-- CAMBIAR AQUI: Tu descripción breve -->
-            <p class="hero-desc">
+            <p class="hero-desc" data-i18n="hero-desc">
             Desarrollador Fullstack en formación (USM, 8vo Semestre). Transformo ideas complejas en productos digitales reales.
             Con experiencia sólida creando CRMs, sistemas CRUD y APIs escalables, combinando la lógica del Backend con la
             interactividad del Frontend moderno.
             </p>
 
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary">Ver Proyectos <i class="ri-arrow-right-line"></i></a>
+                <a href="#projects" class="btn btn-primary"><span data-i18n="btn-projects">Ver Proyectos</span> <i class="ri-arrow-right-line"></i></a>
                 <!-- Reemplaza 'cv.pdf' con la ruta real de tu archivo -->
-                <a href="CV/CV_RM.pdf" class="btn btn-outline" download>Descargar CV <i class="ri-download-line"></i></a>
+                <a href="CV/cv.pdf" class="btn btn-outline" download><span data-i18n="btn-cv">Descargar CV</span> <i class="ri-download-line"></i></a>
             </div>
         </div>
         
@@ -118,7 +122,7 @@
 
     <!-- Sección Proyectos -->
     <section id="projects" class="section">
-        <h2 class="section-title">Mis <span class="highlight">Proyectos</span></h2>
+        <h2 class="section-title"><span data-i18n="projects-title-1">Mis</span> <span class="highlight" data-i18n="projects-title-2">Proyectos</span></h2>
         
         <div class="projects-grid">
               <article class="project-card fade-in">
@@ -128,7 +132,7 @@
                 <div class="card-content">
                     <!-- Info proyecto 1 -->
                     <h3>COVENIN In Revit</h3>
-                    <p> Extensión para Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN. 
+                    <p data-i18n="p1-desc"> Extensión para Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN. 
                     Genera reportes de cómputos métricos e integra elementos de la normativa de construcción nacional, 
                     automatizando procesos para arquitectos e ingenieros civiles en Venezuela.</p>
                     <div class="tags">
@@ -152,7 +156,7 @@
                 <div class="card-content">
                     <!-- CAMBIAR AQUI: Info proyecto 1 -->
                     <h3>FitSync Platform</h3>
-                    <p> Plataforma fitness Fullstack con gestión de usuarios y pasarela de pagos integrada.
+                    <p data-i18n="p2-desc"> Plataforma fitness Fullstack con gestión de usuarios y pasarela de pagos integrada.
                         Arquitectura híbrida potente uniendo la velocidad de React con la lógica de Python.</p>
                     <div class="tags">
                      <span>React 19</span>
@@ -175,7 +179,7 @@
                 <div class="card-content">
                     <!---->
                     <h3>CriptoGuíaVE</h3>
-                    <p>Plataforma educativa y de consulta en tiempo real sobre criptomonedas para Venezuela. 
+                    <p data-i18n="p3-desc">Plataforma educativa y de consulta en tiempo real sobre criptomonedas para Venezuela. 
                      Muestra la tasa del dólar paralelo desde Binance P2P, análisis de tendencias del mercado, 
                     precios globales de criptomonedas y un centro educativo interactivo con quizzes aleatorios.</p>
                     <div class="tags">
@@ -197,19 +201,22 @@
             <!-- PROYECTO 3 -->
             <article class="project-card fade-in" style="animation-delay: 0.4s">
                 <div class="card-image placeholder-img color-3">
-                    <i class="ri-database-2-line"></i>
+                    <img src="/img/CRM_PRO.png" alt="Preview de CRM Platform" class="project-img">
                 </div>
                 <div class="card-content">
                     <!-- -->
-                    <h3>Coming Soon (backend)</h3>
-                    <p>...</p>
+                    <h3 data-i18n="p4-title">CRM Platform</h3>
+                    <p data-i18n="p4-desc">Realice una Plataforma CRM integral para la gestión avanzada de leads con comunicación omnicanal integrada (WhatsApp, Instagram y Facebook). Optimiza el flujo de ventas mediante automatizaciones inteligentes, transcripción de voz a tareas mediante IA y un sistema robusto de presupuestos y analíticas en tiempo real.</p>
                     <div class="tags">
-                        <span>React</span>
-                    
+                        <span>React 19</span>
+                        <span>TypeScript</span>
+                        <span>Supabase</span>
+                        <span>Tailwind CSS</span>
+                        <span>Shadcn UI</span>
+                        <span>Framer Motion</span>
                     </div>
                     <div class="card-links">
-                        <a href="#" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="#" target="_blank"><i class="ri-external-link-line"></i> Docs</a>
+                      
                     </div>
                 </div>
             </article>
@@ -220,19 +227,18 @@
     <section id="about" class="section about-section">
         <div class="about-container fade-in">
             <div class="about-text">
-                <h2 class="section-title">Sobre <span class="highlight">Mí</span></h2>
-                <p>
-                   Desarrollador web en formación continua con más de un año de práctica creando aplicaciones y soluciones web. Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. Busco mi primera 
-                   oportunidad profesional para aportar valor y seguir creciendo.
+                <h2 class="section-title"><span data-i18n="about-title-1">Sobre</span> <span class="highlight" data-i18n="about-title-2">Mí</span></h2>
+                <p data-i18n="about-text">
+                   Desarrollador web en formación continua con más de un año de práctica creando aplicaciones y soluciones web. Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. Actualmente me encuentro en búsqueda de proyectos y colaboraciones donde pueda aportar valor y seguir creciendo profesionalmente.
                 </p>
                 <div class="stats">
                     <div class="stat-item">
                         <h3>+3</h3>
-                        <p>Proyectos</p>
+                        <p data-i18n="stat-projects">Proyectos</p>
                     </div>
                     <div class="stat-item">
                         <h3>100%</h3>
-                        <p>Compromiso</p>
+                        <p data-i18n="stat-commitment">Compromiso</p>
                     </div>
                 </div>
 
@@ -244,16 +250,16 @@
                      3. Asegúrate de alternar las clases "left" y "right" para mantener el diseño en zigzag.
                 -->
                 <div class="timeline-section">
-                    <h3 class="timeline-title">Mi Trayectoria</h3>
+                    <h3 class="timeline-title" data-i18n="timeline-title">Mi Trayectoria</h3>
                     <div class="timeline">
                         
                         <!-- ITEM 1: Revit Project -->
                         <div class="timeline-item left">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">Inicio</span>
+                                <span class="timeline-date" data-i18n="tl-1-date">Inicio | Finalizado</span>
                                 <h4>Revit Project</h4>
-                                <p>Primeros pasos en desarrollo tecnologico y modelado BIM. Adaptacion de normas Covenin al software de revit</p>
+                                <p data-i18n="tl-1-desc">Primeros pasos en desarrollo tecnologico y modelado BIM. Adaptacion de normas Covenin al software de revit</p>
                             </div>
                         </div>
 
@@ -261,29 +267,29 @@
                         <div class="timeline-item right">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">Intermedio</span>
+                                <span class="timeline-date" data-i18n="tl-2-date">Intermedio | Finalizado</span>
                                 <h4>FitSync Platform</h4>
-                                <p>Desarrollo de mi primera plataforma fullstack ambiciosa. Integración de arquitectura híbrida React + Python/Flask.</p>
+                                <p data-i18n="tl-2-desc">Desarrollo de mi primera plataforma fullstack ambiciosa. Integración de arquitectura híbrida React + Python/Flask.</p>
                             </div>
                         </div>
 
-                        <!-- ITEM 3: En Blanco (Placeholder) -->
+                        <!-- ITEM 3: CriptoGuia -->
                         <div class="timeline-item left">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">En Progreso...</span>
-                                <h4>....</h4>
-                                <p>Trabajando en nuevas ideas y expandiendo mi stack tecnológico. ¡Pronto más novedades aquí!</p>
+                                <span class="timeline-date" data-i18n="tl-3-date">Reciente | Finalizado</span>
+                                <h4>CriptoGuíaVE</h4>
+                                <p data-i18n="tl-3-desc">Creación de una herramienta útil para la comunidad venezolana. Consumo de múltiples APIs en tiempo real y lógica financiera.</p>
                             </div>
                         </div>
 
-                        <!-- ITEM 4: CriptoGuia -->
+                        <!-- ITEM 4: CRM Platform -->
                         <div class="timeline-item right">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date">Reciente</span>
-                                <h4>CriptoGuíaVE</h4>
-                                <p>Creación de una herramienta útil para la comunidad venezolana. Consumo de múltiples APIs en tiempo real y lógica financiera.</p>
+                                <span class="timeline-date" data-i18n="tl-4-date">Actualidad | En Progreso</span>
+                                <h4>CRM Platform</h4>
+                                <p data-i18n="tl-4-desc">Desarrollo de plataforma CRM integral con comunicación omnicanal (WhatsApp, FB, IG), automatizaciones inteligentes y gestión de leads con IA.</p>
                             </div>
                         </div>
 
@@ -305,10 +311,10 @@
     <!-- Sección Contacto -->
     <section id="contact" class="section contact-section">
         <div class="contact-box fade-in">
-            <h2>¿Tienes una idea?</h2>
-            <p>Estoy disponible para nuevos proyectos y oportunidades laborales.</p>
+            <h2 data-i18n="contact-title">¿Tienes una idea?</h2>
+            <p data-i18n="contact-text">Estoy disponible para nuevos proyectos y oportunidades laborales.</p>
             <a href="mailto:rmontero30679@gmail.com" class="btn btn-primary btn-large">
-                <i class="ri-mail-send-line"></i> Envíame un correo
+                <i class="ri-mail-send-line"></i> <span data-i18n="btn-email">Envíame un correo</span>
             </a>
             
             <div class="social-links">
@@ -320,7 +326,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Creado con <i class="ri-heart-fill"></i> y mucho café.</p>
+        <p data-i18n="footer-text">&copy; 2025 Creado con <i class="ri-heart-fill"></i> y mucho café.</p>
     </footer>
 
     <!-- Botón Volver Arriba -->
