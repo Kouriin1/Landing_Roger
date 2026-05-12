@@ -43,25 +43,26 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <p class="greeting" data-i18n="hero-greeting">Hola, mundo. Soy</p>
-            <!-- CAMBIAR AQUI: Tu nombre -->
+           
             <h1 class="glitch-text" data-text="Roger Montero">Roger Montero</h1>
             
-            <!-- CAMBIAR AQUI: Tus roles -->
+           
             <h2 class="typing-container">
                 <span data-i18n="hero-role-prefix">Desarrollador</span> <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
             </h2>
             
-            <!-- CAMBIAR AQUI: Tu descripción breve -->
+            
             <p class="hero-desc" data-i18n="hero-desc">
-            Desarrollador Fullstack en formación (USM, 8vo Semestre). Transformo ideas complejas en productos digitales reales.
-            Con experiencia sólida creando CRMs, sistemas CRUD y APIs escalables, combinando la lógica del Backend con la
-            interactividad del Frontend moderno.
+            Desarrollador Fullstack (USM, 8vo Semestre) con experiencia en apps web y móviles. Transformo ideas complejas
+            en productos digitales, combinando Backend sólido con Frontend moderno. He trabajado con CRMs, sistemas CRUD
+            y APIs escalables, y tengo experiencia móvil con React Native y Flutter.
             </p>
 
             <div class="hero-btns">
                 <a href="#projects" class="btn btn-primary"><span data-i18n="btn-projects">Ver Proyectos</span> <i class="ri-arrow-right-line"></i></a>
-                <!-- Reemplaza 'cv.pdf' con la ruta real de tu archivo -->
-                <a href="CV/cv.pdf" class="btn btn-outline" download><span data-i18n="btn-cv">Descargar CV</span> <i class="ri-download-line"></i></a>
+               
+                <a href="CV/CVRogerMontero.pdf" class="btn btn-outline" id="cv-download" data-cv-es="CV/CVRogerMontero.pdf" data-cv-en="CV/CVRogerMonteroEnglish.pdf" download><span data-i18n="btn-cv">Descargar CV</span> <i class="ri-download-line"></i></a>
+                
             </div>
         </div>
         
@@ -77,7 +78,7 @@
                 <pre><code>
   <span class="keyword">const</span> <span class="var">developer</span> = {
   <span class="prop">name</span>: <span class="str">"Roger"</span>,
-  <span class="prop">level</span>: <span class="str">"Junior"</span>,
+  <span class="prop">level</span>: <span class="str">"Junior Advanced"</span>,
   <span class="prop">isHired</span>: <span class="bool">OpenToWork :D</span>,
   <span class="func">code</span>: <span class="keyword">function</span>() {
     <span class="keyword">return</span> <span class="str">"Awesome stuff"</span>;
@@ -287,6 +288,28 @@
                     </div>
                 </div>
             </article>
+
+            <!-- PROYECTO 8: Sistema de Asistencia Morna -->
+            <article class="project-card fade-in" style="animation-delay: 1.2s">
+                <div class="card-image">
+                    <img src="img/asistencia.jpg" alt="Vista previa de Sistema de Asistencia Morna" class="project-img">
+                </div>
+                <div class="card-content">
+                    <span class="badge-enterprise" data-i18n="badge-enterprise">Proyecto Empresarial</span>
+                    <h3 data-i18n="p8-title">Sistema de Asistencia Morna</h3>
+                    <p data-i18n="p8-desc">Rediseño completo del Sistema de Asistencia de Morna: dashboard web en React + Vite + Tailwind, modo kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real. Cuidé la identidad visual, micro-interacciones y una arquitectura escalable.</p>
+                    <div class="tags">
+                        <span>React</span>
+                        <span>Vite</span>
+                        <span>Tailwind CSS</span>
+                        <span>Flutter</span>
+                        <span>Supabase</span>
+                        <span>Auth + RLS</span>
+                    </div>
+                    <div class="card-links">
+                    </div>
+                </div>
+            </article>
         </div>
     </section>
 
@@ -295,9 +318,14 @@
         <div class="about-container fade-in">
             <div class="about-text">
                 <h2 class="section-title"><span data-i18n="about-title-1">Sobre</span> <span class="highlight" data-i18n="about-title-2">Mí</span></h2>
-                <p data-i18n="about-text">
-                   Desarrollador web en formación continua con más de un año de práctica creando aplicaciones y soluciones web. Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. Actualmente me encuentro en búsqueda de proyectos y colaboraciones donde pueda aportar valor y seguir creciendo profesionalmente.
-                </p>
+                     <p data-i18n="about-text">
+                         Desarrollador Fullstack con experiencia en productos web y móviles, desde dashboards operativos
+                         hasta plataformas educativas y sistemas empresariales. He trabajado en CRMs, sistemas de asistencia
+                         y pagos, integrando APIs, autenticación y tiempo real con Supabase, además de apps móviles con
+                         Flutter y frontends en React. Me enfoco en arquitectura escalable, rendimiento y seguridad, cuidando
+                         la UI/UX, la identidad visual y las micro-interacciones. Busco aportar valor en equipos donde la
+                         calidad y la mejora continua sean prioridad.
+                     </p>
                 <div class="stats">
                     <div class="stat-item">
                         <h3>+7</h3>
@@ -357,7 +385,7 @@
                         <div class="timeline-item left">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
-                                <span class="timeline-date" data-i18n="tl-5-date">Reciente | En Progreso</span>
+                                <span class="timeline-date" data-i18n="tl-5-date">Finalizado</span>
                                 <h4>Glik Payment System</h4>
                                 <p data-i18n="tl-5-desc">Ecosistema de pagos vehiculares con app móvil Flutter (kiosco + 2FA) y panel web React SuperAdmin. Arquitectura multi-sede con Supabase Edge Functions e integración de Pago Móvil.</p>
                             </div>
@@ -380,6 +408,16 @@
                                 <span class="timeline-date" data-i18n="tl-7-date">Actualidad | En Progreso</span>
                                 <h4>USM Red</h4>
                                 <p data-i18n="tl-7-desc">Red social académica para la USM como servicio comunitario. Plataforma fullstack con feed de publicaciones, panel admin, perfiles, y base de datos PostgreSQL con 13 tablas y RLS.</p>
+                            </div>
+                        </div>
+
+                        <!-- ITEM 8: Sistema de Asistencia Morna -->
+                        <div class="timeline-item right">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <span class="timeline-date" data-i18n="tl-8-date">Reciente | Finalizado</span>
+                                <h4 data-i18n="tl-8-title">Sistema de Asistencia Morna</h4>
+                                <p data-i18n="tl-8-desc">Rediseño completo del Sistema de Asistencia de Morna con dashboard React + Vite + Tailwind, kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real.</p>
                             </div>
                         </div>
 

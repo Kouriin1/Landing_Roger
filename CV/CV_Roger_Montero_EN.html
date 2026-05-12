@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -156,7 +156,7 @@
             margin: 3px 0;
         }
 
-        /* Estilo especial para impresión */
+        /* Special style for printing */
         @media print {
             body {
                 padding: 20px;
@@ -241,153 +241,152 @@
 
 <body>
 
-    <!-- Controles flotantes para imprimir y cambiar idioma -->
+    <!-- Floating controls for printing and language switching -->
     <div class="floating-controls no-print">
-        <button onclick="window.print()" class="btn" title="Descargar como PDF">
+        <button onclick="window.print()" class="btn" title="Download as PDF">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
                 <polyline points="7 10 12 15 17 10" />
                 <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Descargar / Imprimir PDF
+            Download / Print PDF
         </button>
-        <a href="CV_Roger_Montero_EN.html" class="btn lang-btn" title="Cambiar a Inglés">
+        <a href="CV_Roger_Montero.html" class="btn lang-btn" title="Switch to Spanish">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <circle cx="12" cy="12" r="10" />
                 <line x1="2" y1="12" x2="22" y2="12" />
                 <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
             </svg>
-            English
+            Spanish
         </a>
     </div>
 
     <header>
         <div class="header-info">
             <h1>Roger Montero</h1>
-            <div class="subtitle">Desarrollador Fullstack | Ing. en Sistemas (8vo Semestre)</div>
+            <div class="subtitle">Fullstack Developer | Systems Engineering (8th Semester)</div>
             <div class="contact-info">
                 <a>rmontero30679@gmail.com</a> |
                 <a href="https://linkedin.com/in/roger-montero-ba373525a" target="_blank">LinkedIn</a> |
                 <a href="http://github.com/kouriin1" target="_blank">GitHub</a> |
-                <a href="https://landing-roger.vercel.app" target="_blank">Portafolio</a>
+                <a href="https://landing-roger.vercel.app" target="_blank">Portfolio</a>
             </div>
         </div>
     </header>
 
     <div class="section">
-        <h2>Perfil Profesional</h2>
-        <p>Desarrollador Fullstack (USM, 8vo Semestre) con experiencia en proyectos y experiencia laboral creando
-            aplicaciones web y móviles. Transformo ideas complejas en productos digitales reales, combinando la lógica
-            del Backend con la interactividad del Frontend moderno. Experiencia en CRMs, sistemas CRUD, APIs escalables
-            e integración de IA en el desarrollo web. Experiencia en programación móvil con React Native y Flutter.
-            Proactivo, con fuerte capacidad de resolución lógica de problemas.</p>
+        <h2>Professional Profile</h2>
+        <p>Fullstack Developer (USM, 8th Semester) with experience in projects and professional work building web and
+            mobile applications. I transform complex ideas into real digital products, combining backend logic with
+            modern frontend interactivity. Experience with CRMs, CRUD systems, scalable APIs, and AI integration in web
+            development. Mobile development experience with React Native and Flutter. Proactive, with strong logical
+            problem-solving skills.</p>
     </div>
 
     <div class="section">
-        <h2>Experiencia Laboral</h2>
+        <h2>Work Experience</h2>
         <div class="job">
-            <div class="title">Desarrollador de Software - Morna Tech</div>
-            <p>Aportación en la creación de software y colaboración en sistemas CRM y administrativos.</p>
+            <div class="title">Software Developer - Morna Tech</div>
+            <p>Contributed to software development and collaborated on CRM and administrative systems.</p>
         </div>
     </div>
 
     <div class="section">
-        <h2>Proyectos Destacados</h2>
+        <h2>Featured Projects</h2>
 
         <div class="project">
             <div class="title">COVENIN In Revit</div>
-            <div class="tech-stack">Extensión de Software (Plugin) | Python, PyRevit, .NET, Revit API</div>
+            <div class="tech-stack">Software Extension (Plugin) | Python, PyRevit, .NET, Revit API</div>
             <ul>
-                <li>Extensión para Autodesk Revit 2022 que adapta esquemas a normas venezolanas COVENIN.</li>
-                <li>Automatización de reportes de cómputos métricos cumpliendo con normativa nacional.</li>
+                <li>Extension for Autodesk Revit 2022 that adapts schemes to Venezuelan COVENIN standards.</li>
+                <li>Automation of metric computation reports complying with national regulations.</li>
             </ul>
         </div>
 
         <div class="project">
-            <div class="title">CriptoGuíaVE</div>
-            <div class="tech-stack">Plataforma Educativa Financiera | React 19, TypeScript, Tailwind CSS, Netlify
+            <div class="title">CriptoGuiaVE</div>
+            <div class="tech-stack">Financial Educational Platform | React 19, TypeScript, Tailwind CSS, Netlify
                 Functions</div>
             <ul>
-                <li>Herramienta de consulta en tiempo real sobre criptomonedas y tasas de cambio para Venezuela.</li>
-                <li>Integración de APIs (Binance P2P, CoinGecko) con centro educativo interactivo y quizzes.</li>
+                <li>Real-time consultation tool for cryptocurrencies and exchange rates for Venezuela.</li>
+                <li>API integration (Binance P2P, CoinGecko) with an interactive educational center and quizzes.</li>
             </ul>
         </div>
 
         <div class="project">
-            <div class="title">Sistema de Asistencia Morna</div>
-            <div class="tech-stack">Dashboard + Kiosco | React, Vite, Tailwind CSS, Flutter, Supabase</div>
+            <div class="title">Morna Attendance System</div>
+            <div class="tech-stack">Dashboard + Kiosk | React, Vite, Tailwind CSS, Flutter, Supabase</div>
             <ul>
-                <li>Rediseño completo con identidad visual cuidada y microinteracciones para un dashboard operativo.</li>
-                <li>Kiosco en Flutter con cámara y modo offline; backend en Supabase con Auth, RLS y tiempo real.</li>
+                <li>Full redesign with polished visual identity and micro-interactions for an operational dashboard.</li>
+                <li>Flutter kiosk with camera and offline mode; backend in Supabase with Auth, RLS, and real-time.</li>
             </ul>
         </div>
 
         <div class="project">
-            <div class="title">Glik - Sistema de Pagos</div>
-            <div class="tech-stack">Sistema Multiplataforma | Flutter, React 19, Supabase, Riverpod, Edge Functions
-            </div>
+            <div class="title">Glik - Payment System</div>
+            <div class="tech-stack">Multiplatform System | Flutter, React 19, Supabase, Riverpod, Edge Functions</div>
             <ul>
-                <li>Sistema de kiosco de pagos vehiculares con panel administrativo web completo.</li>
-                <li>Arquitectura multiplataforma combinando Flutter (móvil/kiosco) con React (panel admin).</li>
+                <li>Vehicle payment kiosk system with a complete web admin panel.</li>
+                <li>Multiplatform architecture combining Flutter (mobile/kiosk) with React (admin panel).</li>
             </ul>
         </div>
 
         <div class="project">
-            <div class="title">Plataforma CRM</div>
-            <div class="tech-stack">CRM Empresarial | React 19, TypeScript, Supabase, Tailwind CSS, Shadcn UI</div>
+            <div class="title">CRM Platform</div>
+            <div class="tech-stack">Enterprise CRM | React 19, TypeScript, Supabase, Tailwind CSS, Shadcn UI</div>
             <ul>
-                <li>CRM empresarial con comunicación omnicanal y gestión integral de clientes.</li>
-                <li>Interfaz moderna con componentes reutilizables y animaciones fluidas.</li>
+                <li>Enterprise CRM with omnichannel communication and comprehensive customer management.</li>
+                <li>Modern UI with reusable components and smooth animations.</li>
             </ul>
         </div>
     </div>
 
     <div class="section">
-        <h2>Habilidades Técnicas e Idiomas</h2>
+        <h2>Technical Skills and Languages</h2>
         <div class="skills-container">
             <div class="skill-group">
-                <strong>Lenguajes:</strong> JavaScript, TypeScript, Python, SQL, Dart, HTML5, CSS3.
+                <strong>Programming Languages:</strong> JavaScript, TypeScript, Python, SQL, Dart, HTML5, CSS3.
             </div>
             <div class="skill-group">
                 <strong>Frameworks:</strong> React, React Native, Node.js, Flask, Flutter, Tailwind CSS.
             </div>
             <div class="skill-group">
-                <strong>Herramientas:</strong> Git, Docker, Supabase, APIs REST, AWS.
+                <strong>Tools:</strong> Git, Docker, Supabase, REST APIs, AWS.
             </div>
             <div class="skill-group">
-                <strong>Idiomas:</strong> Español (Nativo), Inglés (B2)
+                <strong>Languages:</strong> Spanish (Native), English (B2)
             </div>
         </div>
     </div>
 
     <div class="section">
-        <h2>Formación Complementaria</h2>
+        <h2>Complementary Training</h2>
         <div class="education-item">
-            <div class="title">Programación Full-Stack</div>
+            <div class="title">Full-Stack Programming</div>
             <div>Social Oplesk | <span class="date">2025</span></div>
         </div>
         <div class="education-item">
-            <div class="title">DevOps + Backend avanzado</div>
+            <div class="title">DevOps and Advanced Backend</div>
             <div>Social Oplesk | <span class="date">2026</span></div>
         </div>
         <div class="education-item">
-            <div class="title">English Course - Nivel B2</div>
+            <div class="title">English Course - Level B2</div>
             <div>Centro Venezolano Americano (CVA) | <span class="date">2022 - 2025</span></div>
         </div>
         <div class="education-item">
-            <div class="title">Curso de Oratoria</div>
+            <div class="title">Public Speaking Course</div>
             <div>AISO (Academia International Social Oratory) | <span class="date">2025</span></div>
         </div>
     </div>
 
     <div class="section">
-        <h2>Educación Superior</h2>
+        <h2>Higher Education</h2>
         <div class="job">
-            <div class="title">Ingeniería en Sistemas (8vo Semestre)</div>
-            <div>Universidad Santa María (USM) | <span class="date">2021 - Presente</span></div>
-            <p>Enfoque en desarrollo de software, estructuras de datos y gestión de proyectos tecnológicos.</p>
+            <div class="title">Systems Engineering (8th Semester)</div>
+            <div>Universidad Santa Maria (USM) | <span class="date">2021 - Present</span></div>
+            <p>Focus on software development, data structures, and technology project management.</p>
         </div>
     </div>
 

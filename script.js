@@ -9,9 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-contact": "Contacto",
             "hero-greeting": "Hola, mundo. Soy",
             "hero-role-prefix": "Desarrollador",
-            "hero-desc": "Desarrollador Fullstack en formación (USM, 8vo Semestre). Transformo ideas complejas en productos digitales reales. Con experiencia sólida creando CRMs, sistemas CRUD y APIs escalables, combinando la lógica del Backend con la interactividad del Frontend moderno.",
+            "hero-desc": "Desarrollador Fullstack (USM, 8vo Semestre) con experiencia en apps web y móviles. Transformo ideas complejas en productos digitales, combinando Backend sólido con Frontend moderno. He trabajado con CRMs, sistemas CRUD y APIs escalables, y tengo experiencia móvil con React Native y Flutter.",
             "btn-projects": "Ver Proyectos",
             "btn-cv": "Descargar CV",
+            "btn-cv-en": "CV (Inglés)",
             "projects-title-1": "Mis",
             "projects-title-2": "Proyectos",
             "p1-desc": "Extensión para Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN. Genera reportes de cómputos métricos e integra elementos de la normativa de construcción nacional, automatizando procesos para arquitectos e ingenieros civiles en Venezuela.",
@@ -23,9 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "p5-desc": "Ecosistema completo de pagos de cuotas vehiculares: app móvil tipo kiosco (Flutter) para que clientes paguen en efectivo con verificación 2FA (Google Authenticator), y panel web SuperAdmin (React) para gestión multi-sede, analíticas financieras y control de deudas. Ambos conectados a una misma base de datos con Edge Functions, integración de Pago Móvil y tasa BCV en tiempo real.",
             "p6-desc": "Revista académica digital interactiva para el Doctorado en Ciencias de la Educación de la USM. Presenta 9 artículos de investigación doctoral sobre neuroeducación, multimodalidad y TIC. Incluye modo revista con efecto flipbook 3D en móvil, generación automática de páginas por scripts Node.js y diseño editorial premium.",
             "p7-desc": "Red social académica para la Universidad Santa María como servicio comunitario. Feed de publicaciones con filtros por facultad, panel admin con CRUD completo y subida de archivos (PDF, video, imágenes), perfiles de usuario, sistema de bookmarks, modo oscuro/claro, y autenticación real con recuperación de contraseña. Base de datos PostgreSQL con 13 tablas, RLS y triggers.",
+            "p8-title": "Sistema de Asistencia Morna",
+            "p8-desc": "Rediseño completo del Sistema de Asistencia de Morna: dashboard web en React + Vite + Tailwind, modo kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real. Cuidé la identidad visual, micro-interacciones y una arquitectura escalable.",
             "about-title-1": "Sobre",
             "about-title-2": "Mí",
-            "about-text": "Desarrollador web en formación continua con más de un año de práctica creando aplicaciones y soluciones web. Cuento con una base sólida en el ciclo de desarrollo de software, adquirida a través de proyectos personales y académicos desafiantes. Soy una persona proactiva, apasionada por la resolución lógica de problemas y con un gran interés en la integración de Inteligencia Artificial en el desarrollo web. Actualmente me encuentro en búsqueda de proyectos y colaboraciones donde pueda aportar valor y seguir creciendo profesionalmente.",
+            "about-text": "Desarrollador Fullstack con experiencia en productos web y móviles, desde dashboards operativos hasta plataformas educativas y sistemas empresariales. He trabajado en CRMs, sistemas de asistencia y pagos, integrando APIs, autenticación y tiempo real con Supabase, además de apps móviles con Flutter y frontends en React. Me enfoco en arquitectura escalable, rendimiento y seguridad, cuidando la UI/UX, la identidad visual y las micro-interacciones. Busco aportar valor en equipos donde la calidad y la mejora continua sean prioridad.",
             "stat-projects": "Proyectos",
             "stat-commitment": "Compromiso",
             "timeline-title": "Mi Trayectoria",
@@ -37,12 +40,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "tl-3-desc": "Creación de una herramienta útil para la comunidad venezolana. Consumo de múltiples APIs en tiempo real y lógica financiera.",
             "tl-4-date": "Reciente | Finalizado",
             "tl-4-desc": "Desarrollo de plataforma CRM integral con comunicación omnicanal (WhatsApp, FB, IG), automatizaciones inteligentes y gestión de leads con IA.",
-            "tl-5-date": "Reciente | En Progreso",
+            "tl-5-date": "Finalizado",
             "tl-5-desc": "Ecosistema de pagos vehiculares con app móvil Flutter (kiosco + 2FA) y panel web React SuperAdmin. Arquitectura multi-sede con Supabase Edge Functions e integración de Pago Móvil.",
             "tl-6-date": "Reciente | Finalizado",
             "tl-6-desc": "Revista académica digital interactiva con modo flipbook 3D para investigaciones doctorales sobre neuroeducación y TIC en la USM. Diseño editorial premium con generación automática de páginas.",
             "tl-7-date": "Actualidad | En Progreso",
             "tl-7-desc": "Red social académica para la USM como servicio comunitario. Plataforma fullstack con feed de publicaciones, panel admin, perfiles, y base de datos PostgreSQL con 13 tablas y RLS.",
+            "tl-8-date": "Reciente | Finalizado",
+            "tl-8-title": "Sistema de Asistencia Morna",
+            "tl-8-desc": "Rediseño completo del Sistema de Asistencia de Morna con dashboard React + Vite + Tailwind, kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real.",
             "contact-title": "¿Tienes una idea?",
             "contact-text": "Estoy disponible para nuevos proyectos y oportunidades laborales.",
             "btn-email": "Envíame un correo",
@@ -55,9 +61,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "nav-contact": "Contact",
             "hero-greeting": "Hello, world. I am",
             "hero-role-prefix": "Developer",
-            "hero-desc": "Fullstack Developer in training (USM, 8th Sem). I transform complex ideas into real digital products. With solid experience creating CRMs, CRUD systems, and scalable APIs, combining Backend logic with modern Frontend interactivity.",
+            "hero-desc": "Fullstack Developer (USM, 8th Sem) with experience in web and mobile apps. I turn complex ideas into digital products, blending solid backend logic with modern frontend. I've worked on CRMs, CRUD systems, and scalable APIs, plus mobile experience with React Native and Flutter.",
             "btn-projects": "View Projects",
             "btn-cv": "Download CV",
+            "btn-cv-en": "CV (English)",
             "projects-title-1": "My",
             "projects-title-2": "Projects",
             "p1-desc": "Extension for Revit 2022 that adapts software schemas to Venezuelan COVENIN standards. Generates metric computation reports and integrates national construction regulation elements, automating processes for architects and civil engineers in Venezuela.",
@@ -69,9 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
             "p5-desc": "Complete vehicle installment payment ecosystem: a Flutter kiosk mobile app for customers to pay in cash with 2FA verification (Google Authenticator), and a React SuperAdmin web panel for multi-branch management, financial analytics, and debt control. Both connected to a shared database with Edge Functions, Pago Móvil integration, and real-time BCV exchange rates.",
             "p6-desc": "Interactive digital academic magazine for the Doctorate in Educational Sciences at USM. Features 9 doctoral research articles on neuroeducation, multimodality, and ICT. Includes a 3D flipbook magazine mode on mobile, automatic page generation via Node.js scripts, and premium editorial design.",
             "p7-desc": "Academic social network for Universidad Santa María as a community service project. Publication feed with faculty filters, admin panel with full CRUD and file uploads (PDF, video, images), user profiles, bookmark system, dark/light mode, and real authentication with password recovery. PostgreSQL database with 13 tables, RLS, and triggers.",
+            "p8-title": "Morna Attendance System",
+            "p8-desc": "Complete redesign of Morna's Attendance System: React + Vite + Tailwind web dashboard, Flutter kiosk mode with camera and offline support, and a Supabase backend with Auth, RLS, and real-time sync. Focused on visual identity, micro-interactions, and scalable architecture.",
             "about-title-1": "About",
             "about-title-2": "Me",
-            "about-text": "Web developer in continuous training with over a year of practice creating web applications and solutions. I have a solid foundation in the software development life cycle, acquired through challenging personal and academic projects. I am a proactive person, passionate about logical problem solving and with a great interest in integrating Artificial Intelligence into web development. I am currently seeking new projects and collaborations where I can add value and continue growing professionally.",
+            "about-text": "Fullstack developer with experience in web and mobile products, from operational dashboards to educational platforms and enterprise systems. I've worked on CRMs, attendance and payment systems, integrating APIs, authentication, and real-time with Supabase, plus mobile apps in Flutter and React-based frontends. I focus on scalable architecture, performance, and security, while caring about UI/UX, visual identity, and micro-interactions. I enjoy adding value in teams where quality and continuous improvement are a priority.",
             "stat-projects": "Projects",
             "stat-commitment": "Commitment",
             "timeline-title": "My Journey",
@@ -83,12 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "tl-3-desc": "Creation of a useful tool for the Venezuelan community. Consumption of multiple real-time APIs and financial logic.",
             "tl-4-date": "Recent | Completed",
             "tl-4-desc": "Development of a comprehensive CRM platform with omnichannel communication (WhatsApp, FB, IG), intelligent automation, and AI lead management.",
-            "tl-5-date": "Recent | In Progress",
+            "tl-5-date": "Completed",
             "tl-5-desc": "Vehicle payment ecosystem with a Flutter kiosk mobile app (2FA) and a React SuperAdmin web panel. Multi-branch architecture with Supabase Edge Functions and Pago Móvil integration.",
             "tl-6-date": "Recent | Completed",
             "tl-6-desc": "Interactive digital academic magazine with 3D flipbook mode for doctoral research on neuroeducation and ICT at USM. Premium editorial design with automatic page generation.",
             "tl-7-date": "Current | In Progress",
             "tl-7-desc": "Academic social network for USM as a community service project. Fullstack platform with publication feed, admin panel, profiles, and PostgreSQL database with 13 tables and RLS.",
+            "tl-8-date": "Recent | Completed",
+            "tl-8-title": "Morna Attendance System",
+            "tl-8-desc": "Complete redesign of Morna Attendance System with a React + Vite + Tailwind dashboard, Flutter kiosk mode with camera and offline support, and Supabase backend with Auth, RLS, and real-time sync.",
             "contact-title": "Have an idea?",
             "contact-text": "I am available for new projects and job opportunities.",
             "btn-email": "Send me an email",
@@ -123,6 +135,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const langBtnText = document.querySelector('.lang-code');
         if (langBtnText) {
             langBtnText.textContent = lang === 'es' ? 'EN' : 'ES';
+        }
+
+        // Actualizar descarga del CV
+        const cvDownloadLink = document.getElementById('cv-download');
+        if (cvDownloadLink) {
+            const cvHref = cvDownloadLink.getAttribute(lang === 'es' ? 'data-cv-es' : 'data-cv-en');
+            if (cvHref) {
+                cvDownloadLink.setAttribute('href', cvHref);
+            }
         }
 
         // Actualizar atributo html lang
