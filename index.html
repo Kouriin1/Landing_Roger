@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <!-- Fuente estilo código para títulos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
     <!-- Iconos (RemixIcon) -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="timeline.css">
 </head>
+
 <body>
 
     <!-- Fondo animado -->
@@ -43,30 +47,36 @@
     <header id="home" class="hero">
         <div class="hero-content">
             <p class="greeting" data-i18n="hero-greeting">Hola, mundo. Soy</p>
-           
+
             <h1 class="glitch-text" data-text="Roger Montero">Roger Montero</h1>
-            
-           
+
+
             <h2 class="typing-container">
-                <span data-i18n="hero-role-prefix">Desarrollador</span> <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                <span data-i18n="hero-role-prefix">Desarrollador</span> <span class="typing-text"
+                    id="typing-text"></span><span class="cursor">|</span>
             </h2>
-            
-            
+
+
             <p class="hero-desc" data-i18n="hero-desc">
-            Desarrollador Fullstack (USM, 8vo Semestre) con experiencia en apps web y móviles. Transformo ideas complejas
-            en productos digitales, combinando Backend sólido con Frontend moderno. He trabajado con CRMs, sistemas CRUD
-            y APIs escalables, y tengo experiencia móvil con React Native y Flutter.
+                Desarrollador Fullstack (USM, 8vo Semestre) con experiencia en apps web y móviles. Transformo ideas
+                complejas
+                en productos digitales, combinando Backend sólido con Frontend moderno. He trabajado con CRMs, sistemas
+                CRUD
+                y APIs escalables, y tengo experiencia móvil con React Native y Flutter.
             </p>
 
             <div class="hero-btns">
-                <a href="#projects" class="btn btn-primary"><span data-i18n="btn-projects">Ver Proyectos</span> <i class="ri-arrow-right-line"></i></a>
-               
-                <a href="CV/CVRoger%20Montero.pdf" class="btn btn-outline" id="cv-download" data-cv-es="CV/CVRoger%20Montero.pdf" data-cv-en="CV/CVRogerMonteroEnglish.pdf" download><span data-i18n="btn-cv">Descargar CV</span> <i class="ri-download-line"></i></a>
-                
+                <a href="#projects" class="btn btn-primary"><span data-i18n="btn-projects">Ver Proyectos</span> <i
+                        class="ri-arrow-right-line"></i></a>
+
+                <a href="CV/CVRoger%20Montero.pdf" class="btn btn-outline" id="cv-download"
+                    data-cv-es="CV/CVRoger%20Montero.pdf" data-cv-en="CV/CVRogerMonteroEnglish.pdf" download><span
+                        data-i18n="btn-cv">Descargar CV</span> <i class="ri-download-line"></i></a>
+
             </div>
         </div>
-        
-         <!-- Elemento visual decorativo (opcional: reemplazar con tu foto) -->
+
+        <!-- Elemento visual decorativo (opcional: reemplazar con tu foto) -->
         <div class="hero-visual">
             <div class="code-block">
                 <div class="code-header">
@@ -123,19 +133,22 @@
 
     <!-- Sección Proyectos -->
     <section id="projects" class="section">
-        <h2 class="section-title"><span data-i18n="projects-title-1">Mis</span> <span class="highlight" data-i18n="projects-title-2">Proyectos</span></h2>
-        
+        <h2 class="section-title"><span data-i18n="projects-title-1">Mis</span> <span class="highlight"
+                data-i18n="projects-title-2">Proyectos</span></h2>
+
         <div class="projects-grid">
-              <article class="project-card fade-in">
-              <div class="card-image">
-                <img src="img/Revit_logo.png" alt="Vista previa de FitSync" class="project-img">
-              </div>
+            <article class="project-card fade-in">
+                <div class="card-image">
+                    <img src="img/Revit_logo.png" alt="Vista previa de FitSync" class="project-img">
+                </div>
                 <div class="card-content">
                     <!-- Info proyecto 1 -->
                     <h3>COVENIN In Revit</h3>
-                    <p data-i18n="p1-desc"> Extensión para Revit 2022 que adapta los esquemas del software a las normas venezolanas COVENIN. 
-                    Genera reportes de cómputos métricos e integra elementos de la normativa de construcción nacional, 
-                    automatizando procesos para arquitectos e ingenieros civiles en Venezuela.</p>
+                    <p data-i18n="p1-desc"> Extensión para Revit 2022 que adapta los esquemas del software a las normas
+                        venezolanas COVENIN.
+                        Genera reportes de cómputos métricos e integra elementos de la normativa de construcción
+                        nacional,
+                        automatizando procesos para arquitectos e ingenieros civiles en Venezuela.</p>
                     <div class="tags">
                         <span>Python</span>
                         <span>PyRevit</span>
@@ -144,30 +157,34 @@
                         <span>Revit</span>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/icristianhernandez/covenin-revit" target="_blank"><i class="ri-github-fill"></i> Code</a>
+                        <a href="https://github.com/icristianhernandez/covenin-revit" target="_blank"><i
+                                class="ri-github-fill"></i> Code</a>
                     </div>
                 </div>
             </article>
 
             <!-- PROYECTO 1 -->
             <article class="project-card fade-in">
-              <div class="card-image">
-                <img src="img/preview_fitsync2.png" alt="Vista previa de FitSync" class="project-img">
-              </div>
+                <div class="card-image">
+                    <img src="img/preview_fitsync2.png" alt="Vista previa de FitSync" class="project-img">
+                </div>
                 <div class="card-content">
                     <!-- CAMBIAR AQUI: Info proyecto 1 -->
                     <h3>FitSync Platform</h3>
-                    <p data-i18n="p2-desc"> Plataforma fitness Fullstack con gestión de usuarios y pasarela de pagos integrada.
+                    <p data-i18n="p2-desc"> Plataforma fitness Fullstack con gestión de usuarios y pasarela de pagos
+                        integrada.
                         Arquitectura híbrida potente uniendo la velocidad de React con la lógica de Python.</p>
                     <div class="tags">
-                     <span>React 19</span>
-                     <span>Python Flask</span>
-                     <span>Supabase</span>
-                     <span>PayPal API</span>
+                        <span>React 19</span>
+                        <span>Python Flask</span>
+                        <span>Supabase</span>
+                        <span>PayPal API</span>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/Kouriin1/FitSync" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="https://fitsync-nu.vercel.app/" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
+                        <a href="https://github.com/Kouriin1/FitSync" target="_blank"><i class="ri-github-fill"></i>
+                            Code</a>
+                        <a href="https://fitsync-nu.vercel.app/" target="_blank"><i class="ri-external-link-line"></i>
+                            Demo</a>
                     </div>
                 </div>
             </article>
@@ -175,14 +192,15 @@
             <!-- PROYECTO 2 -->
             <article class="project-card fade-in" style="animation-delay: 0.2s">
                 <div class="card-image placeholder-img color-2">
-                   <img src="img/CriptoGuia_preview.png" alt="Vista previa de CriptoGuia" class="project-img">
+                    <img src="img/CriptoGuia_preview.png" alt="Vista previa de CriptoGuia" class="project-img">
                 </div>
                 <div class="card-content">
                     <!---->
                     <h3>CriptoGuíaVE</h3>
-                    <p data-i18n="p3-desc">Plataforma educativa y de consulta en tiempo real sobre criptomonedas para Venezuela. 
-                     Muestra la tasa del dólar paralelo desde Binance P2P, análisis de tendencias del mercado, 
-                    precios globales de criptomonedas y un centro educativo interactivo con quizzes aleatorios.</p>
+                    <p data-i18n="p3-desc">Plataforma educativa y de consulta en tiempo real sobre criptomonedas para
+                        Venezuela.
+                        Muestra la tasa del dólar paralelo desde Binance P2P, análisis de tendencias del mercado,
+                        precios globales de criptomonedas y un centro educativo interactivo con quizzes aleatorios.</p>
                     <div class="tags">
                         <span>React 19</span>
                         <span>TypeScript</span>
@@ -193,8 +211,10 @@
 
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/Kouriin1/CriptoGuia" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="https://criptoguia.netlify.app/" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
+                        <a href="https://github.com/Kouriin1/CriptoGuia" target="_blank"><i class="ri-github-fill"></i>
+                            Code</a>
+                        <a href="https://criptoguia.rmontero30679.workers.dev/" target="_blank"><i
+                                class="ri-external-link-line"></i> Demo</a>
                     </div>
                 </div>
             </article>
@@ -208,7 +228,10 @@
                     <!-- -->
                     <span class="badge-enterprise" data-i18n="badge-enterprise">Proyecto Empresarial</span>
                     <h3 data-i18n="p4-title">CRM Platform</h3>
-                    <p data-i18n="p4-desc">Realice una Plataforma CRM integral para la gestión avanzada de leads con comunicación omnicanal integrada (WhatsApp, Instagram y Facebook). Optimiza el flujo de ventas mediante automatizaciones inteligentes, transcripción de voz a tareas mediante IA y un sistema robusto de presupuestos y analíticas en tiempo real.</p>
+                    <p data-i18n="p4-desc">Realice una Plataforma CRM integral para la gestión avanzada de leads con
+                        comunicación omnicanal integrada (WhatsApp, Instagram y Facebook). Optimiza el flujo de ventas
+                        mediante automatizaciones inteligentes, transcripción de voz a tareas mediante IA y un sistema
+                        robusto de presupuestos y analíticas en tiempo real.</p>
                     <div class="tags">
                         <span>React 19</span>
                         <span>TypeScript</span>
@@ -218,19 +241,24 @@
                         <span>Framer Motion</span>
                     </div>
                     <div class="card-links">
-                      
+
                     </div>
                 </div>
             </article>
             <!-- PROYECTO 5: Glik Payment System -->
             <article class="project-card fade-in" style="animation-delay: 0.6s">
                 <div class="card-image">
-                    <img src="img/preview_glik_and_admin.jpeg" alt="Vista previa de Glik Payment System" class="project-img">
+                    <img src="img/preview_glik_and_admin.jpeg" alt="Vista previa de Glik Payment System"
+                        class="project-img">
                 </div>
                 <div class="card-content">
                     <span class="badge-enterprise" data-i18n="badge-enterprise">Proyecto Empresarial</span>
                     <h3>Glik Payment System</h3>
-                    <p data-i18n="p5-desc">Ecosistema completo de pagos de cuotas vehiculares: app móvil tipo kiosco (Flutter) para que clientes paguen en efectivo con verificación 2FA (Google Authenticator), y panel web SuperAdmin (React) para gestión multi-sede, analíticas financieras y control de deudas. Ambos conectados a una misma base de datos con Edge Functions, integración de Pago Móvil y tasa BCV en tiempo real.</p>
+                    <p data-i18n="p5-desc">Ecosistema completo de pagos de cuotas vehiculares: app móvil tipo kiosco
+                        (Flutter) para que clientes paguen en efectivo con verificación 2FA (Google Authenticator), y
+                        panel web SuperAdmin (React) para gestión multi-sede, analíticas financieras y control de
+                        deudas. Ambos conectados a una misma base de datos con Edge Functions, integración de Pago Móvil
+                        y tasa BCV en tiempo real.</p>
                     <div class="tags">
                         <span>Flutter</span>
                         <span>React 19</span>
@@ -251,7 +279,10 @@
                 </div>
                 <div class="card-content">
                     <h3>Revista TIC USM</h3>
-                    <p data-i18n="p6-desc">Revista académica digital interactiva para el Doctorado en Ciencias de la Educación de la USM. Presenta 9 artículos de investigación doctoral sobre neuroeducación, multimodalidad y TIC. Incluye modo revista con efecto flipbook 3D en móvil, generación automática de páginas por scripts Node.js y diseño editorial premium.</p>
+                    <p data-i18n="p6-desc">Revista académica digital interactiva para el Doctorado en Ciencias de la
+                        Educación de la USM. Presenta 9 artículos de investigación doctoral sobre neuroeducación,
+                        multimodalidad y TIC. Incluye modo revista con efecto flipbook 3D en móvil, generación
+                        automática de páginas por scripts Node.js y diseño editorial premium.</p>
                     <div class="tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -260,8 +291,10 @@
                         <span>Responsive Design</span>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/Kouriin1/Revista" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="https://revista-chi.vercel.app/" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
+                        <a href="https://github.com/Kouriin1/Revista" target="_blank"><i class="ri-github-fill"></i>
+                            Code</a>
+                        <a href="https://revista-chi.vercel.app/" target="_blank"><i class="ri-external-link-line"></i>
+                            Demo</a>
                     </div>
                 </div>
             </article>
@@ -273,7 +306,11 @@
                 </div>
                 <div class="card-content">
                     <h3>USM Red</h3>
-                    <p data-i18n="p7-desc">Red social académica para la Universidad Santa María como servicio comunitario. Feed de publicaciones con filtros por facultad, panel admin con CRUD completo y subida de archivos (PDF, video, imágenes), perfiles de usuario, sistema de bookmarks, modo oscuro/claro, y autenticación real con recuperación de contraseña. Base de datos PostgreSQL con 13 tablas, RLS y triggers.</p>
+                    <p data-i18n="p7-desc">Red social académica para la Universidad Santa María como servicio
+                        comunitario. Feed de publicaciones con filtros por facultad, panel admin con CRUD completo y
+                        subida de archivos (PDF, video, imágenes), perfiles de usuario, sistema de bookmarks, modo
+                        oscuro/claro, y autenticación real con recuperación de contraseña. Base de datos PostgreSQL con
+                        13 tablas, RLS y triggers.</p>
                     <div class="tags">
                         <span>React 19</span>
                         <span>Supabase</span>
@@ -283,8 +320,10 @@
                         <span>Vite</span>
                     </div>
                     <div class="card-links">
-                        <a href="https://github.com/Kouriin1/Servicio_Comunitario" target="_blank"><i class="ri-github-fill"></i> Code</a>
-                        <a href="https://servicio-comunitario-zeta.vercel.app/" target="_blank"><i class="ri-external-link-line"></i> Demo</a>
+                        <a href="https://github.com/Kouriin1/Servicio_Comunitario" target="_blank"><i
+                                class="ri-github-fill"></i> Code</a>
+                        <a href="https://servicio-comunitario-zeta.vercel.app/" target="_blank"><i
+                                class="ri-external-link-line"></i> Demo</a>
                     </div>
                 </div>
             </article>
@@ -297,7 +336,9 @@
                 <div class="card-content">
                     <span class="badge-enterprise" data-i18n="badge-enterprise">Proyecto Empresarial</span>
                     <h3 data-i18n="p8-title">Sistema de Asistencia Morna</h3>
-                    <p data-i18n="p8-desc">Rediseño completo del Sistema de Asistencia de Morna: dashboard web en React + Vite + Tailwind, modo kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real. Cuidé la identidad visual, micro-interacciones y una arquitectura escalable.</p>
+                    <p data-i18n="p8-desc">Rediseño completo del Sistema de Asistencia de Morna: dashboard web en React
+                        + Vite + Tailwind, modo kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y
+                        tiempo real. Cuidé la identidad visual, micro-interacciones y una arquitectura escalable.</p>
                     <div class="tags">
                         <span>React</span>
                         <span>Vite</span>
@@ -317,15 +358,16 @@
     <section id="about" class="section about-section">
         <div class="about-container fade-in">
             <div class="about-text">
-                <h2 class="section-title"><span data-i18n="about-title-1">Sobre</span> <span class="highlight" data-i18n="about-title-2">Mí</span></h2>
-                     <p data-i18n="about-text">
-                         Desarrollador Fullstack con experiencia en productos web y móviles, desde dashboards operativos
-                         hasta plataformas educativas y sistemas empresariales. He trabajado en CRMs, sistemas de asistencia
-                         y pagos, integrando APIs, autenticación y tiempo real con Supabase, además de apps móviles con
-                         Flutter y frontends en React. Me enfoco en arquitectura escalable, rendimiento y seguridad, cuidando
-                         la UI/UX, la identidad visual y las micro-interacciones. Busco aportar valor en equipos donde la
-                         calidad y la mejora continua sean prioridad.
-                     </p>
+                <h2 class="section-title"><span data-i18n="about-title-1">Sobre</span> <span class="highlight"
+                        data-i18n="about-title-2">Mí</span></h2>
+                <p data-i18n="about-text">
+                    Desarrollador Fullstack con experiencia en productos web y móviles, desde dashboards operativos
+                    hasta plataformas educativas y sistemas empresariales. He trabajado en CRMs, sistemas de asistencia
+                    y pagos, integrando APIs, autenticación y tiempo real con Supabase, además de apps móviles con
+                    Flutter y frontends en React. Me enfoco en arquitectura escalable, rendimiento y seguridad, cuidando
+                    la UI/UX, la identidad visual y las micro-interacciones. Busco aportar valor en equipos donde la
+                    calidad y la mejora continua sean prioridad.
+                </p>
                 <div class="stats">
                     <div class="stat-item">
                         <h3>+7</h3>
@@ -340,14 +382,15 @@
                 <div class="timeline-section">
                     <h3 class="timeline-title" data-i18n="timeline-title">Mi Trayectoria</h3>
                     <div class="timeline">
-                        
+
                         <!-- ITEM 1: Revit Project -->
                         <div class="timeline-item left">
                             <div class="timeline-dot"></div>
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-1-date">Inicio | Finalizado</span>
                                 <h4>Revit Project</h4>
-                                <p data-i18n="tl-1-desc">Primeros pasos en desarrollo tecnologico y modelado BIM. Adaptacion de normas Covenin al software de revit</p>
+                                <p data-i18n="tl-1-desc">Primeros pasos en desarrollo tecnologico y modelado BIM.
+                                    Adaptacion de normas Covenin al software de revit</p>
                             </div>
                         </div>
 
@@ -357,7 +400,8 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-2-date">Intermedio | Finalizado</span>
                                 <h4>FitSync Platform</h4>
-                                <p data-i18n="tl-2-desc">Desarrollo de mi primera plataforma fullstack ambiciosa. Integración de arquitectura híbrida React + Python/Flask.</p>
+                                <p data-i18n="tl-2-desc">Desarrollo de mi primera plataforma fullstack ambiciosa.
+                                    Integración de arquitectura híbrida React + Python/Flask.</p>
                             </div>
                         </div>
 
@@ -367,7 +411,8 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-3-date">Reciente | Finalizado</span>
                                 <h4>CriptoGuíaVE</h4>
-                                <p data-i18n="tl-3-desc">Creación de una herramienta útil para la comunidad venezolana. Consumo de múltiples APIs en tiempo real y lógica financiera.</p>
+                                <p data-i18n="tl-3-desc">Creación de una herramienta útil para la comunidad venezolana.
+                                    Consumo de múltiples APIs en tiempo real y lógica financiera.</p>
                             </div>
                         </div>
 
@@ -377,7 +422,9 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-4-date">Reciente | Finalizado</span>
                                 <h4>CRM Platform</h4>
-                                <p data-i18n="tl-4-desc">Desarrollo de plataforma CRM integral con comunicación omnicanal (WhatsApp, FB, IG), automatizaciones inteligentes y gestión de leads con IA.</p>
+                                <p data-i18n="tl-4-desc">Desarrollo de plataforma CRM integral con comunicación
+                                    omnicanal (WhatsApp, FB, IG), automatizaciones inteligentes y gestión de leads con
+                                    IA.</p>
                             </div>
                         </div>
 
@@ -387,7 +434,9 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-5-date">Finalizado</span>
                                 <h4>Glik Payment System</h4>
-                                <p data-i18n="tl-5-desc">Ecosistema de pagos vehiculares con app móvil Flutter (kiosco + 2FA) y panel web React SuperAdmin. Arquitectura multi-sede con Supabase Edge Functions e integración de Pago Móvil.</p>
+                                <p data-i18n="tl-5-desc">Ecosistema de pagos vehiculares con app móvil Flutter (kiosco +
+                                    2FA) y panel web React SuperAdmin. Arquitectura multi-sede con Supabase Edge
+                                    Functions e integración de Pago Móvil.</p>
                             </div>
                         </div>
 
@@ -397,7 +446,9 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-6-date">Reciente | Finalizado</span>
                                 <h4>Revista TIC USM</h4>
-                                <p data-i18n="tl-6-desc">Revista académica digital interactiva con modo flipbook 3D para investigaciones doctorales sobre neuroeducación y TIC en la USM. Diseño editorial premium con generación automática de páginas.</p>
+                                <p data-i18n="tl-6-desc">Revista académica digital interactiva con modo flipbook 3D para
+                                    investigaciones doctorales sobre neuroeducación y TIC en la USM. Diseño editorial
+                                    premium con generación automática de páginas.</p>
                             </div>
                         </div>
 
@@ -407,7 +458,9 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-7-date">Actualidad | En Progreso</span>
                                 <h4>USM Red</h4>
-                                <p data-i18n="tl-7-desc">Red social académica para la USM como servicio comunitario. Plataforma fullstack con feed de publicaciones, panel admin, perfiles, y base de datos PostgreSQL con 13 tablas y RLS.</p>
+                                <p data-i18n="tl-7-desc">Red social académica para la USM como servicio comunitario.
+                                    Plataforma fullstack con feed de publicaciones, panel admin, perfiles, y base de
+                                    datos PostgreSQL con 13 tablas y RLS.</p>
                             </div>
                         </div>
 
@@ -417,7 +470,9 @@
                             <div class="timeline-content">
                                 <span class="timeline-date" data-i18n="tl-8-date">Reciente | Finalizado</span>
                                 <h4 data-i18n="tl-8-title">Sistema de Asistencia Morna</h4>
-                                <p data-i18n="tl-8-desc">Rediseño completo del Sistema de Asistencia de Morna con dashboard React + Vite + Tailwind, kiosko Flutter con cámara y offline, y backend Supabase con Auth, RLS y tiempo real.</p>
+                                <p data-i18n="tl-8-desc">Rediseño completo del Sistema de Asistencia de Morna con
+                                    dashboard React + Vite + Tailwind, kiosko Flutter con cámara y offline, y backend
+                                    Supabase con Auth, RLS y tiempo real.</p>
                             </div>
                         </div>
 
@@ -439,10 +494,11 @@
             <a href="mailto:rmontero30679@gmail.com" class="btn btn-primary btn-large">
                 <i class="ri-mail-send-line"></i> <span data-i18n="btn-email">Envíame un correo</span>
             </a>
-            
+
             <div class="social-links">
                 <!-- CAMBIAR AQUI: Tus redes -->
-                <a href="https://www.linkedin.com/in/roger-montero-ba373525a" class="social-icon"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://www.linkedin.com/in/roger-montero-ba373525a" class="social-icon"><i
+                        class="ri-linkedin-fill"></i></a>
                 <a href="https://github.com/Kouriin1" class="social-icon"><i class="ri-github-fill"></i></a>
             </div>
         </div>
@@ -459,4 +515,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
